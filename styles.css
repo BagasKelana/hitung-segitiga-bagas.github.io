@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,500;0,800;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-primary: #3694ff;
+    --color-warning: #ffc61d;
+    --color-white: #fff;
+    --color-background: #dcdcdc;
+}
+html {
+    font-size: 20px;
+    
+}
+p {
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+button {
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+h1 {
+    font-size: 1.68rem;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-background);
+}
+header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ width: 80%;
+ background-color: var(--color-white);
+ padding: 0 1rem;
+}
+header>div:nth-of-type(1) {
+    margin-bottom: 0.3rem;
+    width: 100%
+}
+header>div:nth-of-type(1) h1 {
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+}
+header .btn-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top: 0.88rem;
+    
+}
+
+header .btn-section>button:first-child {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+
+}
+header .btn-section>button:last-child {
+    color: var(--color-primary);
+    background-color: var(--color-white) ;
+    border: none;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+}
+section {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: var(--color-white);
+}
+section>h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    height: 4rem;
+    margin-top: 0.88rem;
+}
+main .segitiga>div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   margin: 1rem 0;
+}
+main section>div:nth-of-type(1)>img {
+    height: 10rem;
+    width: 10rem;
+}
+
+main section>.section-luas>div>p:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+main section>.section-keliling>div>p:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.hitung-segitiga {
+    display: flex;
+    flex-direction: column;
+    gap: 0.88rem;
+}
+.hitung-segitiga>h1 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.hitung-segitiga>div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.88rem;
+}
+.hitung-segitiga>div:nth-of-type(1)>input {
+    height: 1.2rem;
+}
+.btn-hasil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    margin: 0.4rem 0;
+}
+.btn-hasil button:first-child{
+    display: inline;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 10%;
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+}
+.btn-hasil button:last-child{
+    position: relative;
+ left: 50%;
+   margin-right: 4rem;
+   margin-bottom: 0.88rem;
+    width: 3rem;
+    height: 2rem;
+    color: var(--color-white);
+    background-color: var(--color-warning);
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.display {
+    display: none;
+}
+
+
+
+
+
+
