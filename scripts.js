@@ -27,15 +27,15 @@ buttonMain.addEventListener('click', (b) =>{
     }
 });
 function validation (a) {
-    let validasi;
+    let validasi = !0;
     if (a === 'luas') {
-        return +inputLuas1.value !== 0 || "" ? validasi = !0 : (alert('Nilai Panjang harus diisi :)'), validasi = !1), 
-        +inputLuas2.value !== 0 || ""  ? validasi = !0 : (alert('Nilai Tinggi harus diisi :)'), validasi = !1), validasi;
+        return +inputLuas1.value !== 0 || "" ? validasi : (alert('Nilai Panjang harus diisi :)'), validasi = !1), 
+        +inputLuas2.value !== 0 || ""  ? validasi : (alert('Nilai Tinggi harus diisi :)'), validasi = !1), validasi;
     }
       if (a === 'keliling') {
-        return +inputKeliling1.value !== 0 || "" ? validasi = !0 : (alert('Nilai A harus diisi :)'), validasi = !1), 
-        +inputKeliling2.value !== 0 || ""  ? validasi = !0 : (alert('Nilai B harus diisi :)'), validasi = !1),
-        +inputKeliling3.value !== 0 || ""  ? validasi = !0 : (alert('Nilai C harus diisi :)'), validasi = !1), validasi;
+        return +inputKeliling1.value === 0 || "" ? (alert('Nilai A harus diisi :)'), validasi = !1) : validasi , 
+        +inputKeliling2.value === 0 || ""  ? (alert('Nilai B harus diisi :)'), validasi = !1): validasi,
+        +inputKeliling3.value === 0 || ""  ? (alert('Nilai C harus diisi :)'), validasi = !1) : validasi, validasi;
     }
 }
 
